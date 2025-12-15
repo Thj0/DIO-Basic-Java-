@@ -1,28 +1,50 @@
 public class Operadores {
     public static void main (String[] args) {
+       String nomeUm = "Thjo";
+       String nomeDois =  new String("Thjo");
 
-        String concatenacao ="?";
+      System.out.println(nomeUm.equals(nomeDois));
+       
 
-        System.out.println(concatenacao);
 
-        concatenacao = 1+1+1+"1";
+        int numero1 = 1;
+        int numero2 = 2;
 
-        System.out.println(concatenacao);
+        boolean simNao = numero1 == numero2;
 
-        concatenacao = 1+"1"+1+1;
+        if (numero1 < numero2){
+            System.out.println("a nossa condição é verdadeira.");
+        } else { 
+            System.out.println("a nossa condição é falsa.");
+        }    
+    
 
-        System.out.println(concatenacao);
+        System.out.println("numeroUm é igual a numeroDois?" + simNao);
 
-        concatenacao = 1+"1"+1+"1";
+        simNao = numero1 != numero2;
 
-        System.out.println(concatenacao);
+        System.out.println("numeroUm é diferente de numeroDois?" + simNao);
 
-        concatenacao = "1"+1+1+1;
+        simNao = numero1 > numero2;
 
-        System.out.println(concatenacao);
+        System.out.println("numeroUm é maior que numeroDois?" + simNao);
 
-        concatenacao = "1"+(1+1+1);
 
-        System.out.println(concatenacao);
+        boolean condicao1 = true;
+
+        boolean condicao2 = true;
+
+        if (condicao1 && condicao2){
+            System.out.println("as duas condições são verdadeiras");
+
+        }
+
+        if (condicao1 || condicao2){
+            System.out.println("uma das condições é verdadeira");
+        }
+
+
     }
+   
+    
 }
