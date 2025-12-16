@@ -24,6 +24,8 @@ public class Usuario {
         System.out.println("E agora, ainda está ligada?" + smartTv.ligada);
 
 
+        System.out.println("Canal Atual : " + smartTv.canal);
+
         smartTv.mudarCanal(13);
         System.out.println("Canal Atual : " + smartTv.canal);
 
