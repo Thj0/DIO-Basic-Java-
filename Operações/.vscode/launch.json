@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ExDois",
+            "request": "launch",
+            "mainClass": "ExDois",
+            "projectName": "Operações_1e1fc7c0"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
