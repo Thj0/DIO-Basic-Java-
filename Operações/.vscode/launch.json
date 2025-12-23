@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ExTres",
+            "request": "launch",
+            "mainClass": "ExTres",
+            "projectName": "Operações_1e1fc7c0"
+        },
+        {
+            "type": "java",
             "name": "ExDois",
             "request": "launch",
             "mainClass": "ExDois",
