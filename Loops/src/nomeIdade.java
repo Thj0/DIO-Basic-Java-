@@ -2,34 +2,32 @@ import java.util.Scanner;
 
 public class nomeIdade { 
 
-//Esse exercício foi feito com a intenção de utilizar o "while".
+    //Esse exercício foi feito com a intenção de utilizar o "while" com uma condição de parada com break.
 
     public static void main(String[] args) {
         
-        String nome = "Jhonata";
-        String sobrenome = "de Andrade";
-        String nascimento = "2006";
-
-        
-
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);  
+      
         System.out.println("Informe seus dados.");
 
-        System.out.println("Meu nome é: " + nome + " " + sobrenome);
-        System.out.println("Meu ano de nascimento é: " + nascimento);
-        
-        
-        if (sc.hasNextInt()){            
-            int idade= sc.nextInt();
-            System.out.println("Eu tenho " + idade + " " + "anos. ");
 
-        } else {
-            System.out.println("Informe corretamente.");
-        
+        String nome; 
+        int idade;                               
 
+        while (true){                          //Enquanto for true/verdadeiro, execute: 
+
+        System.out.println("Nome: ");        // Mensagem no terminal que pede uma informação.
+        nome = sc.next();                      //O comando 'sc.next' faz com que o sistema de leitura, leia uma string.
+        if (nome.equals("0")) break; // O break interrompe o loop caso o usuário digite '0' como nome.
+
+        System.out.println("Idade: ");      //Outra mensagem no terminal que pede uma segunda informação.
+        idade = sc.nextInt();                 //Já o sc.nextInt' faz com que leia um valor inteiro.
         
         }
+        
+        System.out.println("Informe corretamente!");  // Mensagem exibida após o encerramento do loop.
+        sc.close();                                      // E aqui, após todo o código a gente fecha o sistema de leitura.
 
-        sc.close();
+        
     }
 }
