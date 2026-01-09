@@ -12,7 +12,7 @@ public class nomeIdade {
 
 
         String nome; 
-        int idade;                               
+        int idade;                           
 
         while (true){                          //Enquanto for true/verdadeiro, execute: 
 
@@ -21,7 +21,7 @@ public class nomeIdade {
         if (nome.equals("0")) break; // O break interrompe o loop caso o usuário digite '0' como nome.
 
         System.out.println("Idade: ");      //Outra mensagem no terminal que pede uma segunda informação.
-        idade = sc.nextInt();                 //Já o sc.nextInt' faz com que leia um valor inteiro.
+        idade = sc.nextInt();                 //Já o 'sc.nextInt' faz com que leia um valor inteiro.
         
         }
         
