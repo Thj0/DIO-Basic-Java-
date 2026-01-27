@@ -12,22 +12,27 @@ public class nomeIdade {
 
 
         String nome; 
-        int idade;                           
+        int idade;                       
 
         while (true){                          //Enquanto for true/verdadeiro, execute: 
 
         System.out.println("Nome: ");        // Mensagem no terminal que pede uma informação.
         nome = sc.next();                      //O comando 'sc.next' faz com que o sistema de leitura, leia uma string.
-        if (nome.equals("0")) break; // O break interrompe o loop caso o usuário digite '0' como nome.
+        if (nome.equals("0")) {      // O break interrompe o loop caso o usuário digite '0' como nome.
+            break;
+        }
 
         System.out.println("Idade: ");      //Outra mensagem no terminal que pede uma segunda informação.
         idade = sc.nextInt();                 //Já o 'sc.nextInt' faz com que leia um valor inteiro.
         
+        System.out.println("Nome: " + nome + "| Idade: " + idade);
         }
         
         System.out.println("Informe corretamente!");  // Mensagem exibida após o encerramento do loop.
+        
         sc.close();                                      // E aqui, após todo o código a gente fecha o sistema de leitura.
 
         
     }
+
 }
