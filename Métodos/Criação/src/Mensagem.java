@@ -1,3 +1,5 @@
+/*Classe de exemplo para o exercício da Aula 1 de métodos*/
+
 public class Mensagem {
     
     public static void obterMensagem(int hora) { 
