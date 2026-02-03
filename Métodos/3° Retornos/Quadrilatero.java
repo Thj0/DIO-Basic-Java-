@@ -19,4 +19,7 @@ public class Quadrilatero {
 
     }
 
+    public int verifica(int i) { 
+        return i;
+    }
 }
