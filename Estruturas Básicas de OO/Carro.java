@@ -18,39 +18,38 @@ public class Carro {
         this.capacidadeTanque = capacidadeTanque;
     }
 
+    
     void setCor (String cor){ 
-
         this.cor = cor;
     }
 
-    String getCor() { 
 
+    String getCor() { 
         return cor;
     }
 
-    void setModelo(String modelo) {
 
+    void setModelo(String modelo) {
         this.modelo = modelo;
     }
 
-    String getModelo() {
 
+    String getModelo() {
         return modelo;
     }
 
+
     void setCapacidadeTanque(int capacidadeTanque) {
-        
         this.capacidadeTanque = capacidadeTanque;
     }
 
-    int getCapacidadeTanque() {
 
+    int getCapacidadeTanque() {
         return capacidadeTanque;
     }
 
+
     double totalTanque(double valorCombustivel) {
-
         return capacidadeTanque * valorCombustivel;
-
     }
 }
